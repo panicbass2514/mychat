@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>My Chat</title>
+
+	<!-- Loading the jScrollPane CSS, along with the styling of the chat in chat.css and the rest of the page in page.css -->
+
+	<link rel="stylesheet" type="text/css" href="js/jScrollPane/jScrollPane.css">
+	<link rel="stylesheet" type="text/css" href="css/page.css">
+	<link rel="stylesheet" type="text/css" href="css/chat.css">
+</head>
+<body>
+	<div id="chatContainer">
+		<div id="chatTopBar" class="rounded"></div>
+		<div id="chatLineHolder"></div>
+
+
+		<div id="chatUsers" class="rounded"></div>
+		<div id="chatBottomBar" class="rounded">
+			<div class="tip"></div>
+
+			<form action="" method="post" id="loginForm">
+				<input id="name" name="name" class="rounded" maxlenght="16">
+				<input id="email" name="email" class="rounded">
+				<input type="submit" class="blueButton" value="Login">
+			</form>
+
+			<form id="submitForm" mehtod="post" action="">
+				<input name="chatText" class="rounded" maxlength="255" type="text" id="chatText">
+				<input class="blueButton" value="Submit" type="submit">
+			</form>
+		</div>
+	</div>
+</body>
+
+<!-- Loading jQuery, the mousewheel plugin and jScrollPane, along with our script -->
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script src="js/jScrollPane/jquery.mousewheel.js"></script>
+<script src="js/jScrollPane/jScrollPane.min.js"></script>
+<script src="js/script.js"></script>
+</html>
